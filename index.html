@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Temperature App</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="Content/angular-gridster.min.css">
+    <link rel="stylesheet" href="app/app.css">
+    <link rel="stylesheet" href="ext-modules/taFramework/taFramework.css">
+    <link rel="stylesheet" href="ext-modules/taMenu/taMenu.css">
+    <link rel="stylesheet" href="ext-modules/taDashboard/taDashboard.css">
+
+    <!-- widget CSS -->
+    <link rel="stylesheet" href="app/widgets/taaOption1/taaOption1.css">
+
+
+    <script src="Scripts/jquery-2.1.3.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-animate.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/angular-gridster.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+
+
+
+    <script src="ext-modules/taMenu/taMenuModule.js"></script>
+    <script src="ext-modules/taMenu/taMenuController.js"></script>
+    <script src="ext-modules/taMenu/taMenuDirective.js"></script>
+    <script src="ext-modules/taMenu/taMenuItemDirective.js"></script>
+    <script src="ext-modules/taMenu/taMenuGroupDirective.js"></script>
+
+    <script src="ext-modules/taDashboard/taDashboardModule.js"></script>
+    <script src="ext-modules/taDashboard/taDashboardDirective.js"></script>
+    <script src="ext-modules/taDashboard/taWidgetBodyDirective.js"></script>
+
+
+    <script src="ext-modules/taFramework/taFrameworkModule.js"></script>
+    <script src="ext-modules/taFramework/taFrameworkController.js"></script>
+    <script src="ext-modules/taFramework/taFrameworkDirective.js"></script>
+
+
+    <script src="app/appModule.js"></script>
+    <script src="app/appConfig.js"></script>
+    <script src="app/appRouteConfig.js"></script>
+    <script src="app/services/dataService.js"></script>
+
+    <script src="app/directives/taaDashboardDirective.js"></script>
+    <script src="app/directives/taaGuidesDirective.js"></script>
+    <script src="app/directives/taaLocationsDirective.js"></script>
+
+
+    <!--widget JS files -->
+    <script src="app/widgets/taaOption1/taaOption1Directive.js"></script>
+
+
+
+</head>
+<body class="container-fluid">
+    <ta-framework title="Temperature App"
+                    subtitle="Check Temperature"
+                    icon-file="images/temp-logo.jpg">
+
+        <ta-menu>
+            <ta-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></ta-menu-item>
+            <ta-menu-item label="Locations" icon="fa-location-arrow" route="locations"></ta-menu-item>
+            <ta-menu-item label="Guides" icon="fa-user" route="guides"></ta-menu-item>
+            <ta-menu-group label="Options" icon="fa-gears">
+                <ta-menu-item label="Option 1" icon="fa-gamepad" route="option1"></ta-menu-item>
+                <ta-menu-item label="Option 2" icon="fa-trophy" route="option2"></ta-menu-item>
+                <ta-menu-item label="Option 3" icon="fa-gavel" route="option3"></ta-menu-item>
+
+
+            </ta-menu-group>
+
+        </ta-menu>
+
+    </ta-framework>
+
+</body>
+</html>

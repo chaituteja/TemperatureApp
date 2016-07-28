@@ -1,0 +1,63 @@
+<div class="taa-option1-widget">
+
+    <div class="taa-option1-heading">
+        <!--<img class="taa-option1-icon" ng-src="images/temp-logo.jpg" alt="thermometer" />-->
+        <span class="taa-option1-title">Search for weather</span>
+    </div>
+
+    <div class="taa-option1-body">
+        <div>
+            <br>
+            <p>
+                <input type="text" ng-model="search" placeholder="Type City">
+                <button class = 'btn btn-primary ' ng-click = Search(search)> Search </button>
+            </p>
+            <h3> Current Weather of {{temperature.location.name}}</h3>
+            <table class="table">
+                <tr>
+                    <td class="tg-yw4l">CITY</td>
+                    <td class="tg-yw4l">{{temperature.location.name}}</td>
+                </tr>
+                <tr>
+                    <td class="tg-yw4l">Country</td>
+                    <td class="tg-yw4l">{{temperature.location.country}}</td>
+                </tr>
+                <tr>
+                    <td class="tg-yw4l">Temperature (&#176C)</td>
+                    <td class="tg-yw4l">{{temperature.current.temp_c }}</td>
+                </tr>
+                <tr>
+                    <td class="tg-yw4l">Temperature (&#176F)</td>
+                    <td class="tg-yw4l">{{temperature.current.temp_f}}</td>
+                </tr>
+                <tr>
+                    <td class="tg-yw4l">Local Time</td>
+                    <td class="tg-yw4l">{{temperature.location.localtime}}</td>
+                </tr>
+                <tr>
+                    <td class="tg-yw41">Description</td>
+                    <td class="tg-yw4l">{{temperature.current.condition.text}}
+                        <img ng-src={{temperature.current.condition.icon}}></td>
+                </tr>
+                <tr>
+                    <td class="tg-yw4l">Wind Speed in mph</td>
+                    <td class="tg-yw4l">{{temperature.current.wind_mph}}</td>
+                </tr>
+                <tr>
+                    <td class="tg-yw4l">Wind Speed in kph</td>
+                    <td class="tg-yw4l">{{temperature.current.wind_kph}}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="taa-option1-view">
+
+            <div class="taa-option1-name">
+
+            </div>
+           <!-- <div class="taa-option1-degrees">
+                {{ selectedLocation.temperature }}º
+            </div>-->
+        </div>
+    </div>
+
+</div>
