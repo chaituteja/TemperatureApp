@@ -6,6 +6,7 @@ ta-dashboard {
 .gridster .gridster-item {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     background: white;
+
 }
 .ta-widget-header {
     position: relative;

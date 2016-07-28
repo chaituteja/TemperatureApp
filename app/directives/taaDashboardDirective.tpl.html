@@ -1,0 +1,29 @@
+<div>
+    <h1> Current Temperature of {{temperature.city.name}}</h1>
+    <table class="table">
+        <tr>
+            <th class="tg-yw4l">CITY</th>
+            <th class="tg-yw4l">{{temperature.city.name}}</th>
+        </tr>
+        <tr>
+            <td class="tg-yw4l">Country</td>
+            <td class="tg-yw4l">{{temperature.city.country}}</td>
+        </tr>
+        <tr>
+            <td class="tg-yw4l">Temperature</td>
+            <td class="tg-yw4l">{{temperature.list[0].main.temp}}</td>
+        </tr>
+        <tr>
+            <td class="tg-yw4l">Humidity</td>
+            <td class="tg-yw4l">{{temperature.list[0].main.humidity}}</td>
+        </tr>
+        <tr>
+            <td class="tg-yw4l">Description</td>
+            <td class="tg-yw4l">{{temperature.list[1].weather[0].description}}</td>
+        </tr>
+        <tr>
+            <td class="tg-yw4l">Wind Speed</td>
+            <td class="tg-yw4l">{{temperature.list[1].wind.speed}}</td>
+        </tr>
+    </table>
+</div>

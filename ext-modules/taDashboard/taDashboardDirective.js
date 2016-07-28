@@ -4,6 +4,7 @@
 
 angular.module('taDashboard').directive('taDashboard', function () {
     return {
+
             templateUrl:'ext-modules/taDashboard/taDashboardTemplate.html',
             link : function (scope,element, attrs) {
                 scope.addNewWidget = function (widget) {
